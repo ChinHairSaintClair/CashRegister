@@ -1,0 +1,18 @@
+.PriceItemsContainer{
+    position: relative;
+    min-width: 220px;
+    width: 220px;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+.NoCharges{
+    font-family: monaco,Consolas,Lucida Console,monospace; 
+}
+
+.TotalSeperator{
+    position: relative;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+}

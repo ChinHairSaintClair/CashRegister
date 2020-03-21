@@ -1,24 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
+import Keypad from './components/Keypad/Keypad';
+import TotalItems from './components/PriceItemsContainer/PriceItemsContainer';
+
 function App() {
+  const [chargeItems, setChargeItems] = useState([]);
+  const [total, setTotal] = useState(0);
+
+  const addItem = (value) => {
+    const item = {
+      id: ((Math.random() * 10) + (Math.random() * 10)),
+      value: value
+    }
+
+    const items = [...chargeItems, item];
+    setChargeItems(items);
+
+    setTotal(total + value);
+  }
+
+  const removeItem = (item) => {
+    const items = [...chargeItems];
+    var removeIndex = items.map(function(item) { return item.id; }).indexOf(item.id);
+    items.splice(removeIndex, 1);
+
+    setChargeItems(items);
+
+    setTotal(total - item.value);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Keypad add={addItem} />
+      <TotalItems items={chargeItems} total={total} remove={removeItem} />
     </div>
   );
 }

@@ -1,0 +1,9 @@
+.Button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-grow: 1;
+    font-size: 20;
+    box-sizing: border-box;
+}

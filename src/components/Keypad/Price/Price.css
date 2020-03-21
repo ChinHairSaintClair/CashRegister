@@ -1,0 +1,16 @@
+.Price{
+    font-size: 32px;
+    text-align: right;
+    background-color: transparent;
+}
+
+.Price input{
+    font-size: 32px;
+    text-align: right;
+    font-family: monaco,Consolas,Lucida Console,monospace; 
+    border: none;
+    outline-width: 0;
+    cursor: default;
+    color: transparent;
+    background-color: transparent;
+}

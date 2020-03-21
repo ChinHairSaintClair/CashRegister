@@ -1,0 +1,21 @@
+.Keypad{
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    min-height: 400px;
+    border-radius: 5px;
+    box-shadow: 0 0 18px;
+}
+
+.KeypadButtonContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: calc(100% - 96px);
+}
+
+.Row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}

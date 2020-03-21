@@ -1,0 +1,7 @@
+.PriceItem{
+    text-align: right;
+    font-family: monaco,Consolas,Lucida Console,monospace; 
+    margin: 4px 0px;
+    font-size: 16px;
+    cursor: pointer;
+}
