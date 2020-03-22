@@ -1,10 +1,11 @@
 .Price{
+    position: relative;
     font-size: 32px;
-    text-align: right;
     background-color: transparent;
 }
 
 .Price input{
+    position: relative;
     font-size: 32px;
     text-align: right;
     font-family: monaco,Consolas,Lucida Console,monospace; 
@@ -13,4 +14,5 @@
     cursor: default;
     color: transparent;
     background-color: transparent;
+    width: 100%;
 }

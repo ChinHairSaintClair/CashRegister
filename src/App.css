@@ -2,3 +2,24 @@
   text-align: center;
   display: flex;
 }
+
+.CostContainer{
+  margin: 0px 30px;
+   position: relative;
+}
+
+@media (max-width: 702px) {
+  .App {
+    flex-direction: column;
+  }
+
+  .CostContainer{
+    margin: 20px 0px;
+  }
+}
+
+@media (max-width: 375px){
+  .App {
+    width: 375px;
+  }
+}

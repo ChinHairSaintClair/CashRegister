@@ -15,7 +15,7 @@ const PriceItem = props => {
 
     return (
         <div className='PriceItem' style={myStyle}>
-            R {props.value}
+            R {props.value.toFixed(2)}
         </div>
     );
 }

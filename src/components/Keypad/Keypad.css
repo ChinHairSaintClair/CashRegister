@@ -1,17 +1,23 @@
 .Keypad{
+    position: relative;
     display: flex;
     flex-direction: column;
     min-width: 400px;
     min-height: 400px;
     border-radius: 5px;
     box-shadow: 0 0 18px;
+
+    user-select: none;
 }
 
 .KeypadButtonContainer{
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: calc(100% - 96px);
+    width: 100%;
+    bottom: 0px;
 }
 
 .Row{

@@ -1,9 +1,17 @@
 .Button{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     flex-grow: 1;
-    font-size: 20;
+    font-size: 20px;
     box-sizing: border-box;
+}
+
+.Value{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

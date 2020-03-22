@@ -1,5 +1,7 @@
 .PriceItemsContainer{
-    position: relative;
+    position: absolute;
+    top: 0;
+    /*position: relative;*/
     min-width: 220px;
     width: 220px;
     border-radius: 5px;

@@ -33,7 +33,9 @@ function App() {
   return (
     <div className="App">
       <Keypad add={addItem} />
-      <TotalItems items={chargeItems} total={total} remove={removeItem} />
+      <div className='CostContainer'>
+        <TotalItems items={chargeItems} total={total} remove={removeItem} />
+      </div>
     </div>
   );
 }

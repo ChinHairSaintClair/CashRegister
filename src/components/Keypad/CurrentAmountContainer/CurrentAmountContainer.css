@@ -5,4 +5,5 @@
     flex-direction: column;
     justify-content: center;
     background: linear-gradient(0deg, rgba(232,237,244,1) 0%, rgba(227,232,239,1) 100%);
+    box-sizing: border-box;
 }

@@ -6,13 +6,14 @@ import Button from './Button/Button';
 import CurrentAmountContainer from './CurrentAmountContainer/CurrentAmountContainer';
 
 const Keypad = props => {
-    //const [ currentPrice, setCurrentPrice ] = useState(0);
     const [currentPriceArr, setCurrentPriceArr] = useState([]);
 
     const addNumberToPrice = (value) => {
-        const arr = [...currentPriceArr];
-        arr.push(value);
-        setCurrentPriceArr(arr);
+        if(currentPriceArr.length < 8){
+            const arr = [...currentPriceArr];
+            arr.push(value);
+            setCurrentPriceArr(arr);
+        }
     }
 
     const removeNumberFromPrice = () => {
@@ -22,11 +23,13 @@ const Keypad = props => {
     }
 
     const resetPrice = () => {
-        setCurrentPriceArr([0]);
+        setCurrentPriceArr([]);
     }
 
-    let price = currentPriceArr.length > 0 ? parseInt(currentPriceArr.join('')) : 0;
-    //price = price.toFixed(2);
+    let price = 0;
+    if(currentPriceArr.length > 0){
+        price = parseFloat(currentPriceArr.join('') / 100);
+    }
 
     const isValidAmount = () => {
         return price > 0 && price < 1000000;
